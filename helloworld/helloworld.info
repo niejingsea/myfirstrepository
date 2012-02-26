@@ -1,0 +1,4 @@
+; $Id$
+name = Hello World
+description = Description of Hello World module
+core = 7.x

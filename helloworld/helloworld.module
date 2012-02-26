@@ -1,0 +1,28 @@
+<?php
+// $Id:$
+/**
+ * @file
+ * hello world module
+ */
+
+/**
+ * Implementation of hook_enable().
+ */
+function helloworld_menu() {
+  $items = array();
+  
+  $items['helloworld'] = array(
+    'title' => 'Hello world',
+    'page callback' => 'helloworld_page',
+    'access arguments' => array('access content'),
+  );
+  
+  return $items;
+}
+
+/**
+ * Implementation of 
+ */
+function helloworld_page() {
+  return 'Hello, wow world!';
+}
